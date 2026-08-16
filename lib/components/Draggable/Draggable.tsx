@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-import type { DndItemHandlers } from '../interfaces';
+import type { DndItemHandlers } from '../../interfaces';
 
 interface DraggableProps extends DndItemHandlers {
   children: ReactNode;

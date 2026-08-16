@@ -1,11 +1,11 @@
 import type { ReactNode } from 'react';
 
-import { useDndListContext } from '../hooks';
+import { useDndListContext } from '../../hooks';
 
-import { Draggable } from './Draggable';
-import { DropIndicator } from './DropIndicator';
+import { Draggable } from '../Draggable';
+import { DropIndicator } from '../DropIndicator';
 
-import type { DndItem } from '../interfaces';
+import type { DndItem } from '../../interfaces';
 
 type Props<T> = {
   children: (item: T) => ReactNode;

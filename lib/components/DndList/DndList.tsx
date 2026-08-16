@@ -1,15 +1,16 @@
 import type { ReactNode } from 'react';
 
-import { DndListContext } from '../hooks';
+import { DndListContext } from '../../hooks';
+import { DndListHeader } from '../DndListHeader';
+import { DndListItems } from '../DndListItems';
+import { DropZone } from '../DropZone';
+
 import type {
   DndContainerHandlers,
   DndItem,
   DndSlot,
   GetItemHandlers,
-} from '../interfaces';
-import { DndListHeader } from './DndListHeader';
-import { DndListItems } from './DndListItems';
-import { DropZone } from './DropZone';
+} from '../../interfaces';
 
 interface DndListProps<T extends DndItem> {
   children: ReactNode;

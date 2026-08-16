@@ -8,7 +8,7 @@ import type {
   DndSlot,
   GetContainerHandlers,
   GetItemHandlers,
-} from '../interfaces';
+} from '../../interfaces';
 
 interface DragPayload {
   itemId: string;
