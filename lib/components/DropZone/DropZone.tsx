@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-import type { DndContainerHandlers } from '../interfaces';
+import type { DndContainerHandlers } from '../../interfaces';
 
 interface DropZoneProps extends DndContainerHandlers {
   children: ReactNode;
