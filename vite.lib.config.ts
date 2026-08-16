@@ -12,7 +12,7 @@ export default defineConfig({
       tsconfigPath: './tsconfig.app.json',
       include: ['lib'],
       exclude: ['lib/**/*.test.ts', 'lib/**/*.test.tsx'],
-      rollupTypes: true,
+      rollupTypes: false,
     }),
   ],
   build: {

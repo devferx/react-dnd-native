@@ -4,12 +4,29 @@
   "description": "A small, generic drag-and-drop library for React built on the native HTML5 Drag and Drop API — no external dependencies.",
   "type": "module",
   "license": "MIT",
+  "author": "Fernando Quinteros Gutierrez",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devferx/react-dnd-native.git"
+  },
+  "homepage": "https://github.com/devferx/react-dnd-native#readme",
+  "bugs": {
+    "url": "https://github.com/devferx/react-dnd-native/issues"
+  },
+  "keywords": [
+    "react",
+    "drag-and-drop",
+    "dnd",
+    "html5",
+    "drag",
+    "drop"
+  ],
   "main": "./dist/react-dnd-native.cjs",
   "module": "./dist/react-dnd-native.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/lib/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
+      "types": "./dist/lib/index.d.ts",
       "import": "./dist/react-dnd-native.js",
       "require": "./dist/react-dnd-native.cjs"
     },
@@ -30,7 +47,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "format": "oxfmt",
-    "format:check": "oxfmt --check"
+    "format:check": "oxfmt --check",
+    "prepublishOnly": "npm run lint && npm run typecheck && npm test && npm run build",
+    "release": "npm publish --access public"
   },
   "peerDependencies": {
     "react": "^19.0.0",
