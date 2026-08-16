@@ -34,10 +34,13 @@ const initialLists: TaskList[] = [
 ];
 
 function App() {
-  const { containers, getItemHandlers, getContainerHandlers } = useDragAndDrop(initialLists, {
-    getItems: (list) => list.tasks,
-    setItems: (list, tasks) => ({ ...list, tasks }),
-  });
+  const { containers, getItemHandlers, getContainerHandlers } = useDragAndDrop(
+    initialLists,
+    {
+      getItems: (list) => list.tasks,
+      setItems: (list, tasks) => ({ ...list, tasks }),
+    },
+  );
 
   return (
     <main>

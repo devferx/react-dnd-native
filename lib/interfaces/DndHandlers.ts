@@ -11,6 +11,11 @@ export interface DndContainerHandlers {
   onDrop: (event: DragEvent<HTMLElement>) => void;
 }
 
-export type GetItemHandlers = (itemId: string, containerId: string) => DndItemHandlers;
+export type GetItemHandlers = (
+  itemId: string,
+  containerId: string,
+) => DndItemHandlers;
 
-export type GetContainerHandlers = (containerId: string) => DndContainerHandlers;
+export type GetContainerHandlers = (
+  containerId: string,
+) => DndContainerHandlers;

@@ -1,14 +1,18 @@
-import { resolve } from 'node:path'
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import dts from 'vite-plugin-dts'
+import { resolve } from 'node:path';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import dts from 'vite-plugin-dts';
 
 // Library build: bundles lib/ into dist/ for publishing. Run via `npm run build`.
 // https://vite.dev/guide/build.html#library-mode
 export default defineConfig({
   plugins: [
     react(),
-    dts({ tsconfigPath: './tsconfig.app.json', include: ['lib'], rollupTypes: true }),
+    dts({
+      tsconfigPath: './tsconfig.app.json',
+      include: ['lib'],
+      rollupTypes: true,
+    }),
   ],
   build: {
     outDir: 'dist',
@@ -23,4 +27,4 @@ export default defineConfig({
     },
     copyPublicDir: false,
   },
-})
+});
