@@ -12,7 +12,7 @@ movement, and visual drop indicators, while leaving the data structure and
 presentation to the consumer. It knows nothing about "cards" or "columns"; it
 only knows about **items** (things with an `id`) and **containers** (anything
 with an `id` that holds a list of items) — you tell it how to read/write the
-items array on _your own_ container type via a small adapter
+items array on *your own* container type via a small adapter
 (`{ getItems, setItems }`). A kanban board is just one consumer.
 
 ### Features
