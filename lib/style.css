@@ -1,0 +1,19 @@
+/*
+ * Required classes for react-dnd-native.
+ *
+ * The library never inlines styles — it only toggles these two class names
+ * on the elements it renders, so you control the look. Import this file for
+ * sensible defaults, or define the classes yourself and skip the import.
+ */
+
+.dnd-dragging {
+  display: none;
+}
+
+.dnd-drop-indicator {
+  min-height: 60px;
+  border: 2px dashed currentColor;
+  border-radius: 8px;
+  opacity: 0.4;
+  flex-shrink: 0;
+}
