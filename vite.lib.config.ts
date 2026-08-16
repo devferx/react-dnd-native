@@ -11,6 +11,7 @@ export default defineConfig({
     dts({
       tsconfigPath: './tsconfig.app.json',
       include: ['lib'],
+      exclude: ['lib/**/*.test.ts', 'lib/**/*.test.tsx'],
       rollupTypes: true,
     }),
   ],
