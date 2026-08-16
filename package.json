@@ -41,6 +41,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build -c vite.lib.config.ts && cp lib/style.css dist/style.css",
+    "build:demo": "vite build",
     "typecheck": "tsc -b",
     "lint": "oxlint",
     "preview": "vite preview",
