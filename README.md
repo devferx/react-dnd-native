@@ -12,7 +12,7 @@ movement, and visual drop indicators, while leaving the data structure and
 presentation to the consumer. It knows nothing about "cards" or "columns"; it
 only knows about **items** (things with an `id`) and **containers** (anything
 with an `id` that holds a list of items) — you tell it how to read/write the
-items array on *your own* container type via a small adapter
+items array on _your own_ container type via a small adapter
 (`{ getItems, setItems }`). A kanban board is just one consumer.
 
 ### Features
@@ -202,6 +202,16 @@ The library assumes two global classes exist wherever it's used:
 Import `react-dnd-native/style.css` for sensible defaults, or define the
 classes yourself in your own stylesheet.
 
+## Testing
+
+Unit tests are written with [Vitest](https://vitest.dev/) and
+[React Testing Library](https://testing-library.com/react).
+
+```sh
+npm test          # run all tests once
+npm run test:watch  # run tests in watch mode
+```
+
 ## Roadmap
 
 This is a `0.1.0` library — the core drag-and-drop behavior works, but the
@@ -220,7 +230,7 @@ public API, testing, accessibility, and packaging are still in progress.
 
 ### Developer Experience
 
-- [ ] Add comprehensive unit tests
+- [x] Add comprehensive unit tests
 - [ ] Add integration tests for drag-and-drop interactions
 - [ ] Improve TypeScript types and API ergonomics
 - [x] Add interactive playground
